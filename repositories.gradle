@@ -4,6 +4,7 @@ repositories {
         content {
             includeGroupByRegex "com\\.android.*"
             includeGroupByRegex "androidx.*"
+            includeGroupByRegex "com\\.crashlytics.*"
             includeGroup "android.arch.lifecycle"
             includeGroup "android.arch.core"
             includeGroup "com.google.firebase"
@@ -26,6 +27,7 @@ repositories {
             includeGroupByRegex "net\\.sf.*"
             includeGroupByRegex "javax.*"
             includeGroup "com.github.bumptech.glide"
+            includeGroup "com.github.ben-manes"
             includeGroup "com.ibm.icu"
             includeGroup "com.nhaarman.mockitokotlin2"
             includeGroup "commons-io"
@@ -61,7 +63,6 @@ repositories {
         url 'https://maven.fabric.io/public'
         content {
             includeGroupByRegex "io\\.fabric.*"
-            includeGroupByRegex "com\\.crashlytics.*"
         }
     }
 

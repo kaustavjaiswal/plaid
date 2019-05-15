@@ -21,51 +21,53 @@ buildscript { scriptHandler ->
             'compileSdk'         : 28,
             'minSdk'             : 23,
             'targetSdk'          : 28,
-            'appcompat'          : '1.1.0-alpha04',
+            'appcompat'          : '1.1.0-alpha05',
             'androidx'           : '1.0.0',
-            'androidxCollection' : '1.0.0',
+            'androidxCollection' : '1.1.0-rc01',
             'androidxCoreRuntime': '2.0.1-alpha01',
-            'androidxArch'       : '2.0.0',
-            'constraintLayout'   : '2.0.0-alpha2',
-            'coreKtx'            : '1.0.0',
-            'coroutines'         : '1.1.1',
-            'crashlytics'        : '2.9.8',
-            'dagger'             : '2.16',
+            'androidxArch'       : '2.1.0-beta01',
+            'constraintLayout'   : '2.0.0-beta1',
+            'coreKtx'            : '1.2.0-alpha01',
+            'coroutines'         : '1.2.1',
+            'crashlytics'        : '2.10.0',
+            'dagger'             : '2.22.1',
             'espresso'           : '3.1.0-beta02',
             'extJunit'           : '1.1.0',
-            'fabric'             : '1.25.4',
-            'firebase'           : '16.0.6',
+            'fabric'             : '1.29.0',
+            'firebase'           : '16.0.9',
             'glide'              : '4.8.0',
             'googleServices'     : '4.0.1',
             'gson'               : '2.8.5',
-            'jsoup'              : '1.11.3',
+            'jsoup'              : '1.12.1',
             'junit'              : '4.12',
-            'kotlin'             : '1.3.20',
-            'ktlint'             : '0.24.0',
+            'kotlin'             : '1.3.31',
+            'ktlint'             : '0.29.0',
             'legacyCoreUtils'    : '1.0.0',
-            'lifecycle'          : '2.1.0-alpha01',
-            'material'           : '1.1.0-alpha05',
-            'mockito'            : '2.23.0',
-            'mockito_kotlin'     : '2.0.0-RC3',
+            'lifecycle'          : '2.2.0-alpha01',
+            'material'           : '1.1.0-alpha06',
+            'mockito'            : '2.27.0',
+            'mockito_kotlin'     : '2.1.0',
             'okhttp'             : '3.10.0',
-            'retrofit'           : '2.4.0',
+            'retrofit'           : '2.5.0',
             'retrofitCoroutines' : '0.9.2',
             'room'               : '2.1.0-alpha05',
             'supportLibrary'     : '28.0.0',
             'test_rules'         : '1.1.0-beta02',
             'test_runner'        : '1.1.0-beta02',
             'ui_automator'       : '2.2.0-beta02',
-            'viewPager2'         : '1.0.0-alpha02'
+            'viewPager2'         : '1.0.0-alpha02',
+            'versionsPlugin'     : '0.21.0'
     ]
     ext.names = [
             'applicationId': 'io.plaidapp'
     ]
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0-rc02'
+        classpath 'com.android.tools.build:gradle:3.4.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
         classpath "com.google.gms:google-services:${versions.googleServices}"
         classpath "io.fabric.tools:gradle:${versions.fabric}"
+        classpath "com.github.ben-manes:gradle-versions-plugin:${versions.versionsPlugin}"
     }
 
 }
